@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Магазин техники</title>
+    <link rel="stylesheet" href="main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Шапка сайта -->
+    <header class="header">
+      <div class="container">
+        <!-- Левая часть: Логотип -->
+        <div class="logo">
+          <a href="#">
+            <img src="img/logo.webp" alt="Логотип магазина" />
+            <span>TECHSHOP</span>
+          </a>
+        </div>
+
+        <!-- Центральная часть: Меню -->
+        <nav class="menu">
+          <ul class="menu-list">
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">Каталог</a></li>
+            <li><a href="#">Акции</a></li>
+            <li><a href="#">Доставка и оплата</a></li>
+            <li><a href="#">О компании</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+        </nav>
+
+        <!-- Правая часть: Корзина и соцсети -->
+        <div class="actions">
+          <div class="social-icons">
+            <a href="#" title="Telegram"><i class="fab fa-telegram"></i></a>
+            <a href="#" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <a href="#" title="Email"><i class="fas fa-envelope"></i></a>
+          </div>
+          <div class="cart">
+            <a href="#">
+              <i class="fas fa-shopping-cart"></i>
+              <span class="cart-count">0</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Мобильное меню (бургер) -->
+        <div class="mobile-menu-icon">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </header>
+    <!-- Заголовок -->
+    <h1 class="page-title">Интернет-магазин техники</h1>
+    <!-- Слайдер -->
+    <div class="carousel">
+      <!-- Стрелки для переключения -->
+      <button class="carousel-control prev" onclick="prevSlide()"
+        >&#10094;</button
+      >
+      <button class="carousel-control next" onclick="nextSlide()"
+        >&#10095;</button
+      >
+      <!-- Контейнер для слайдов -->
+      <div class="carousel-inner" id="carouselInner">
+        <div class="slide">
+          <img src="img/smart-watch.webp" alt="Слайд 1" />
+        </div>
+        <div class="slide">
+          <img src="img/headphones.webp" alt="Слайд 2" />
+        </div>
+      </div>
+    </div>
+    <div class="popular-categories">
+      <h2>Популярные категории</h2>
+      <div class="category-grid">
+        <!-- Категория 1: Умные часы -->
+        <div class="category-item" style="background-color: #99ff99">
+          <img src="img/popular_watch.webp" alt="Умные часы" />
+          <h3>Умные часы</h3>
+        </div>
+
+        <!-- Категория 2: Игровые приставки -->
+        <div class="category-item" style="background-color: #ffff66">
+          <img src="img/game_console.webp" alt="Игровые приставки" />
+          <h3>Игровые приставки</h3>
+        </div>
+
+        <!-- Категория 3: Ноутбуки -->
+        <div class="category-item" style="background-color: #b39ddb">
+          <img src="img/notebook.webp" alt="Ноутбуки" />
+          <h3>Ноутбуки</h3>
+        </div>
+
+        <!-- Категория 5: Наушники TWS -->
+        <div class="category-item" style="background-color: #ff69b4">
+          <img src="img/headphones_popular.webp" alt="Наушники TWS" />
+          <h3>Наушники</h3>
+        </div>
+
+        <!-- Категория 6: Умные колонки -->
+        <div class="category-item" style="background-color: #87ceeb">
+          <img src="img/smart_speaker.webp" alt="Умные колонки" />
+          <h3>Умные колонки</h3>
+        </div>
+      </div>
+    </div>
+    <div class="benefits-section">
+      <div class="benefits-grid">
+        <!-- Блок 1: Большой выбор -->
+        <div class="benefit-item" style="background-color: #ffd700">
+          <img src="img/size_change.webp" alt="Большой выбор" />
+        </div>
+
+        <!-- Блок 2: Выгодные предложения -->
+        <div class="benefit-item" style="background-color: #9b59b6">
+          <img src="img/good_sales.webp" alt="Выгодные предложения" />
+        </div>
+
+        <!-- Блок 3: Еженедельные акции -->
+        <div class="benefit-item" style="background-color: #ffd700">
+          <img src="img/size_change.webp" alt="Еженедельные акции" />
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
